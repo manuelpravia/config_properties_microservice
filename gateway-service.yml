@@ -30,7 +30,7 @@ spring:
           predicates:
             - Path=/provider/**
           filters:
-            #- name: AuthenticationFiltering    
+            - AuthenticationFiltering    
         - id: product-service
           uri: lb://product-service
           predicates:
