@@ -30,9 +30,13 @@ spring:
           predicates:
             - Path=/provider/**
           filters:
-            - name: AuthenticationFiltering    
+            #- name: AuthenticationFiltering    
         - id: product-service
           uri: lb://product-service
           predicates:
             - Path=/product/**
+        - id: keycloak-adapter-service
+          uri: lb://keycloak-adapter-service
+          predicates:
+            - Path=/authentication/**            
  
