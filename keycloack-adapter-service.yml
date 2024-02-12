@@ -1,9 +1,9 @@
+
+service:
+  name: keycloak-adapter-service
 server:
   port: 9081
 
-spring:
-  application:
-    name: keycloak-adapter-service
 
 eureka:
   client:
