@@ -29,6 +29,8 @@ spring:
           uri: lb://provider-service
           predicates:
             - Path=/provider/**
+          filters:
+            - name: AuthenticationFiltering    
         - id: product-service
           uri: lb://product-service
           predicates:
