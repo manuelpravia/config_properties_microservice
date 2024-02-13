@@ -1,8 +1,8 @@
 
 service:
-  name: keycloak-adapter-service
+  name: security-service
 server:
-  port: 9081
+  port: 9095
 
 
 eureka:
