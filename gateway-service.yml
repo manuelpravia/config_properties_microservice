@@ -35,8 +35,8 @@ spring:
           uri: lb://product-service
           predicates:
             - Path=/product/**
-        - id: keycloak-adapter-service
-          uri: lb://keycloak-adapter-service
+        - id: security-service
+          uri: lb://security-service
           predicates:
             - Path=/authentication/**            
  
