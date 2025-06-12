@@ -21,6 +21,6 @@ keycloak:
 
   client-id: bodgen-microservice
   client-secret: 9LNeJCA1fm7U5RBfed376w2b1cANPoAi
-  scope: profile
+  scope: email profile
   authorization-grant-type: password
   authorization-grant-type-refresh: refresh_token    
