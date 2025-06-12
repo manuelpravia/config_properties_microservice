@@ -11,16 +11,16 @@ eureka:
       defaultZone: http://localhost:8099/eureka/
 
 keycloak:
-  base-uri: ${KEYCLOACK_SERVER:http://localhost:8091/auth/realms/}
+  base-uri: ${KEYCLOACK_SERVER:http://localhost:8091/realms/}
   authorization-uri: ${keycloak.base-uri}mpraviap/protocol/openid-connect/auth
   user-info-uri: ${keycloak.base-uri}mpraviap/protocol/openid-connect/userinfo
   token-uri: ${keycloak.base-uri}mpraviap/protocol/openid-connect/token
   logout: ${keycloak.base-uri}mpraviap/protocol/openid-connect/logout
   jwk-set-uri: ${keycloak.base-uri}mpraviap/protocol/openid-connect/certs
-  certs-id: ${KEYCLOACK_REAL_ID:Sl3G3Kr_TdmiijrUMchmAJJOarlwWYk5d6wyhtf9eTs}
+  certs-id: ${KEYCLOACK_REAL_ID:YTv5paWhhzjWQVtBbgmPiZRoJGuSTkAf9xob9Ydz5uo}
 
   client-id: bodgen-microservice
-  client-secret: J6nucnK7cGEC0RD74R3pEe2yRTeKXolR
+  client-secret: 9LNeJCA1fm7U5RBfed376w2b1cANPoAi
   scope: profile
   authorization-grant-type: password
-  authorization-grant-type-refresh: refresh_token      
+  authorization-grant-type-refresh: refresh_token    
