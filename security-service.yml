@@ -17,10 +17,9 @@ keycloak:
   token-uri: ${keycloak.base-uri}mpraviap/protocol/openid-connect/token
   logout: ${keycloak.base-uri}mpraviap/protocol/openid-connect/logout
   jwk-set-uri: ${keycloak.base-uri}mpraviap/protocol/openid-connect/certs
-  certs-id: ${KEYCLOACK_REAL_ID:YTv5paWhhzjWQVtBbgmPiZRoJGuSTkAf9xob9Ydz5uo}
 
   client-id: bodgen-microservice
   client-secret: 9LNeJCA1fm7U5RBfed376w2b1cANPoAi
-  scope: email profile
+  scope: openid profile
   authorization-grant-type: password
   authorization-grant-type-refresh: refresh_token    
